@@ -31,8 +31,7 @@ Download
 
 Download the .apk file from the link given below...
 
-[Download .apk file](https://github.com/maheshkurmi/libgdx-mario/blob/master/libgdx-mario/my-gdx-game-android.apk)
-
+[Download .apk file](https://github.com/maheshkurmi/libgdx-mario/blob/master/libgdx-mario/my-gdx-game-android.apk?raw=true)
 
 For installation, you must have enabled the option of install apps from unknown sources. For this, go to the sttings, then go to security and enable the corresponding option.
 
