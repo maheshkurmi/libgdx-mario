@@ -38,9 +38,10 @@ For installation, you must have enabled the option of install apps from unknown 
 
 Super-Mario MAP Editor
 ====================
-Source code also conatins a stand alone gui editor to edit level in mario games.
-just import, edit and save levels to see you creativity in action
 ![Map editor screenshot](https://camo.githubusercontent.com/2525d3cfc1811034dd088484520b692190e5a4ad/68747470733a2f2f707265766965772e6962622e636f2f68764b4b4d512f53637265656e5f53686f745f323031375f30345f32305f61745f31325f34355f30335f504d2e706e67)
+<br>
+Source code also conatins a stand alone [gui editor](https://github.com/maheshkurmi/libgdx-mario/wiki/How-to-edit-maps-using-Gui-Editor) to edit level in mario games.
+just import, edit and save levels to see you creativity in action
 
 How to Import source in eclipse
 ====================
