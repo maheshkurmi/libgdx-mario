@@ -1,0 +1,335 @@
+
+mario.png
+size: 1024,64
+format: RGBA8888
+filter: Nearest,Nearest
+repeat: none
+Mario_Big_Change_Direction_Left
+  rotate: false
+  xy: 646, 30
+  size: 16, 28
+  orig: 16, 28
+  offset: 0, 0
+  index: -1
+Mario_Big_Change_Direction_Left_Fire
+  rotate: false
+  xy: 664, 30
+  size: 16, 28
+  orig: 16, 28
+  offset: 0, 0
+  index: -1
+Mario_Big_Change_Direction_Right
+  rotate: false
+  xy: 682, 30
+  size: 16, 28
+  orig: 16, 28
+  offset: 0, 0
+  index: -1
+Mario_Big_Change_Direction_Right_Fire
+  rotate: false
+  xy: 700, 30
+  size: 16, 28
+  orig: 16, 28
+  offset: 0, 0
+  index: -1
+Mario_Big_Crouch_Left
+  rotate: false
+  xy: 86, 6
+  size: 12, 16
+  orig: 12, 16
+  offset: 0, 0
+  index: -1
+Mario_Big_Crouch_Left_Fire
+  rotate: false
+  xy: 188, 12
+  size: 12, 16
+  orig: 12, 16
+  offset: 0, 0
+  index: -1
+Mario_Big_Crouch_Right
+  rotate: false
+  xy: 202, 12
+  size: 12, 16
+  orig: 12, 16
+  offset: 0, 0
+  index: -1
+Mario_Big_Crouch_Right_Fire
+  rotate: false
+  xy: 216, 12
+  size: 12, 16
+  orig: 12, 16
+  offset: 0, 0
+  index: -1
+Mario_Big_Jump_Left
+  rotate: false
+  xy: 862, 32
+  size: 16, 26
+  orig: 16, 26
+  offset: 0, 0
+  index: -1
+Mario_Big_Jump_Left_Fire
+  rotate: false
+  xy: 880, 32
+  size: 16, 26
+  orig: 16, 26
+  offset: 0, 0
+  index: -1
+Mario_Big_Jump_Right
+  rotate: false
+  xy: 898, 32
+  size: 16, 26
+  orig: 16, 26
+  offset: 0, 0
+  index: -1
+Mario_Big_Jump_Right_Fire
+  rotate: false
+  xy: 916, 32
+  size: 16, 26
+  orig: 16, 26
+  offset: 0, 0
+  index: -1
+Mario_Big_Left_1
+  rotate: false
+  xy: 934, 32
+  size: 16, 26
+  orig: 16, 26
+  offset: 0, 0
+  index: -1
+Mario_Big_Left_1_Fire
+  rotate: false
+  xy: 952, 32
+  size: 16, 26
+  orig: 16, 26
+  offset: 0, 0
+  index: -1
+Mario_Big_Left_2
+  rotate: false
+  xy: 718, 31
+  size: 16, 27
+  orig: 16, 27
+  offset: 0, 0
+  index: -1
+Mario_Big_Left_2F
+  rotate: false
+  xy: 970, 32
+  size: 16, 26
+  orig: 16, 26
+  offset: 0, 0
+  index: -1
+Mario_Big_Left_2_Fire
+  rotate: false
+  xy: 736, 31
+  size: 16, 27
+  orig: 16, 27
+  offset: 0, 0
+  index: -1
+Mario_Big_Left_Run_1
+  rotate: false
+  xy: 478, 31
+  size: 19, 27
+  orig: 19, 27
+  offset: 0, 0
+  index: -1
+Mario_Big_Left_Run_1_Fire
+  rotate: false
+  xy: 499, 31
+  size: 19, 27
+  orig: 19, 27
+  offset: 0, 0
+  index: -1
+Mario_Big_Left_Run_2
+  rotate: false
+  xy: 562, 32
+  size: 19, 26
+  orig: 19, 26
+  offset: 0, 0
+  index: -1
+Mario_Big_Left_Run_2_Fire
+  rotate: false
+  xy: 583, 32
+  size: 19, 26
+  orig: 19, 26
+  offset: 0, 0
+  index: -1
+Mario_Big_Left_Still
+  rotate: false
+  xy: 754, 31
+  size: 16, 27
+  orig: 16, 27
+  offset: 0, 0
+  index: -1
+Mario_Big_Left_StillF
+  rotate: false
+  xy: 172, 2
+  size: 14, 26
+  orig: 14, 26
+  offset: 0, 0
+  index: -1
+Mario_Big_Left_Still_Fire
+  rotate: false
+  xy: 772, 31
+  size: 16, 27
+  orig: 16, 27
+  offset: 0, 0
+  index: -1
+Mario_Big_Right_1
+  rotate: false
+  xy: 790, 31
+  size: 16, 27
+  orig: 16, 27
+  offset: 0, 0
+  index: -1
+Mario_Big_Right_1_Fire
+  rotate: false
+  xy: 1006, 32
+  size: 16, 26
+  orig: 16, 26
+  offset: 0, 0
+  index: -1
+Mario_Big_Right_2
+  rotate: false
+  xy: 988, 32
+  size: 16, 26
+  orig: 16, 26
+  offset: 0, 0
+  index: -1
+Mario_Big_Right_2_Fire
+  rotate: false
+  xy: 808, 31
+  size: 16, 27
+  orig: 16, 27
+  offset: 0, 0
+  index: -1
+Mario_Big_Right_Run_1
+  rotate: false
+  xy: 520, 31
+  size: 19, 27
+  orig: 19, 27
+  offset: 0, 0
+  index: -1
+Mario_Big_Right_Run_1_Fire
+  rotate: false
+  xy: 541, 31
+  size: 19, 27
+  orig: 19, 27
+  offset: 0, 0
+  index: -1
+Mario_Big_Right_Run_2
+  rotate: false
+  xy: 604, 32
+  size: 19, 26
+  orig: 19, 26
+  offset: 0, 0
+  index: -1
+Mario_Big_Right_Run_2_Fire
+  rotate: false
+  xy: 625, 32
+  size: 19, 26
+  orig: 19, 26
+  offset: 0, 0
+  index: -1
+Mario_Big_Right_Still
+  rotate: false
+  xy: 826, 31
+  size: 16, 27
+  orig: 16, 27
+  offset: 0, 0
+  index: -1
+Mario_Big_Right_Still_Fire
+  rotate: false
+  xy: 844, 31
+  size: 16, 27
+  orig: 16, 27
+  offset: 0, 0
+  index: -1
+Mario_Big_Swim_Left
+  rotate: false
+  xy: 256, 31
+  size: 76, 27
+  orig: 76, 27
+  offset: 0, 0
+  index: -1
+Mario_Big_Swim_Right
+  rotate: false
+  xy: 334, 31
+  size: 76, 27
+  orig: 76, 27
+  offset: 0, 0
+  index: -1
+Mario_Fire_Swim_Left
+  rotate: false
+  xy: 100, 30
+  size: 76, 28
+  orig: 76, 28
+  offset: 0, 0
+  index: -1
+Mario_Fire_Swim_Right
+  rotate: false
+  xy: 178, 30
+  size: 76, 28
+  orig: 76, 28
+  offset: 0, 0
+  index: -1
+Mario_Flip
+  rotate: false
+  xy: 68, 7
+  size: 16, 15
+  orig: 16, 15
+  offset: 0, 0
+  index: -1
+Mario_Slope_Left
+  rotate: false
+  xy: 100, 2
+  size: 16, 26
+  orig: 16, 26
+  offset: 0, 0
+  index: -1
+Mario_Slope_Left_Fire
+  rotate: false
+  xy: 118, 2
+  size: 16, 26
+  orig: 16, 26
+  offset: 0, 0
+  index: -1
+Mario_Slope_Right
+  rotate: false
+  xy: 136, 2
+  size: 16, 26
+  orig: 16, 26
+  offset: 0, 0
+  index: -1
+Mario_Slope_Right_Fire
+  rotate: false
+  xy: 154, 2
+  size: 16, 26
+  orig: 16, 26
+  offset: 0, 0
+  index: -1
+Mario_Small_Left
+  rotate: false
+  xy: 2, 42
+  size: 96, 16
+  orig: 96, 16
+  offset: 0, 0
+  index: -1
+Mario_Small_Right
+  rotate: false
+  xy: 2, 24
+  size: 96, 16
+  orig: 96, 16
+  offset: 0, 0
+  index: -1
+Mario_Small_Swim_Left
+  rotate: false
+  xy: 2, 6
+  size: 64, 16
+  orig: 64, 16
+  offset: 0, 0
+  index: -1
+Mario_Small_Swim_Right
+  rotate: false
+  xy: 412, 42
+  size: 64, 16
+  orig: 64, 16
+  offset: 0, 0
+  index: -1

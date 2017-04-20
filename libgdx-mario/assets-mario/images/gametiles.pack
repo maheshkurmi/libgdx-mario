@@ -1,0 +1,202 @@
+
+gametiles.png
+size: 1024,512
+format: RGBA8888
+filter: Nearest,Nearest
+repeat: none
+Bush_1
+  rotate: false
+  xy: 198, 388
+  size: 49, 16
+  orig: 49, 16
+  offset: 0, 0
+  index: -1
+Bush_2
+  rotate: false
+  xy: 274, 414
+  size: 49, 16
+  orig: 49, 16
+  offset: 0, 0
+  index: -1
+Castle
+  rotate: false
+  xy: 2, 56
+  size: 111, 100
+  orig: 111, 100
+  offset: 0, 0
+  index: -1
+FireTile
+  rotate: false
+  xy: 2, 20
+  size: 32, 16
+  orig: 32, 16
+  offset: 0, 0
+  index: -1
+Grass_Center
+  rotate: false
+  xy: 75, 38
+  size: 16, 16
+  orig: 16, 16
+  offset: 0, 0
+  index: -1
+Grass_Edge
+  rotate: false
+  xy: 115, 90
+  size: 16, 16
+  orig: 16, 16
+  offset: 0, 0
+  index: -1
+Icy_Tiles
+  rotate: false
+  xy: 2, 158
+  size: 96, 272
+  orig: 96, 272
+  offset: 0, 0
+  index: -1
+Plain_Tiles
+  rotate: false
+  xy: 100, 158
+  size: 96, 272
+  orig: 96, 272
+  offset: 0, 0
+  index: -1
+Question_Block_0
+  rotate: false
+  xy: 149, 140
+  size: 16, 16
+  orig: 16, 16
+  offset: 0, 0
+  index: -1
+Question_Block_1
+  rotate: false
+  xy: 643, 432
+  size: 16, 16
+  orig: 16, 16
+  offset: 0, 0
+  index: -1
+Question_Block_2
+  rotate: false
+  xy: 701, 456
+  size: 16, 16
+  orig: 16, 16
+  offset: 0, 0
+  index: -1
+Question_Block_3
+  rotate: false
+  xy: 719, 466
+  size: 16, 16
+  orig: 16, 16
+  offset: 0, 0
+  index: -1
+Question_Block_Dead
+  rotate: false
+  xy: 777, 490
+  size: 16, 16
+  orig: 16, 16
+  offset: 0, 0
+  index: -1
+Rotating_Block_Hit_1
+  rotate: false
+  xy: 198, 370
+  size: 16, 16
+  orig: 16, 16
+  offset: 0, 0
+  index: -1
+Rotating_Block_Hit_2
+  rotate: false
+  xy: 249, 388
+  size: 16, 16
+  orig: 16, 16
+  offset: 0, 0
+  index: -1
+Rotating_Block_Hit_3
+  rotate: false
+  xy: 325, 414
+  size: 16, 16
+  orig: 16, 16
+  offset: 0, 0
+  index: -1
+Rotating_Block_Still
+  rotate: false
+  xy: 2, 2
+  size: 16, 16
+  orig: 16, 16
+  offset: 0, 0
+  index: -1
+Sloped_Tile
+  rotate: false
+  xy: 36, 20
+  size: 16, 16
+  orig: 16, 16
+  offset: 0, 0
+  index: -1
+Tree_1
+  rotate: false
+  xy: 643, 450
+  size: 56, 22
+  orig: 56, 22
+  offset: 0, 0
+  index: -1
+Tree_2
+  rotate: false
+  xy: 719, 484
+  size: 56, 22
+  orig: 56, 22
+  offset: 0, 0
+  index: -1
+Water_Wave
+  rotate: false
+  xy: 2, 481
+  size: 639, 25
+  orig: 639, 25
+  offset: 0, 0
+  index: -1
+Water_Wave1
+  rotate: false
+  xy: 2, 432
+  size: 639, 20
+  orig: 639, 20
+  offset: 0, 0
+  index: -1
+Water_Wave2
+  rotate: false
+  xy: 2, 454
+  size: 639, 25
+  orig: 639, 25
+  offset: 0, 0
+  index: -1
+tree
+  rotate: false
+  xy: 115, 108
+  size: 32, 48
+  orig: 32, 48
+  offset: 0, 0
+  index: -1
+water_plant
+  rotate: false
+  xy: 93, 38
+  size: 16, 16
+  orig: 16, 16
+  offset: 0, 0
+  index: -1
+water_rock
+  rotate: false
+  xy: 643, 474
+  size: 74, 32
+  orig: 74, 32
+  offset: 0, 0
+  index: -1
+water_rocks
+  rotate: false
+  xy: 198, 406
+  size: 74, 24
+  orig: 74, 24
+  offset: 0, 0
+  index: -1
+wooden_bridge
+  rotate: false
+  xy: 2, 38
+  size: 71, 16
+  orig: 71, 16
+  offset: 0, 0
+  index: -1

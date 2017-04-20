@@ -1,0 +1,34 @@
+
+particles.png
+size: 128,32
+format: RGBA8888
+filter: Nearest,Nearest
+repeat: none
+Bomb_Particle
+  rotate: false
+  xy: 68, 11
+  size: 48, 16
+  orig: 48, 16
+  offset: 0, 0
+  index: -1
+Smoke_Particle
+  rotate: false
+  xy: 2, 19
+  size: 64, 8
+  orig: 64, 8
+  offset: 0, 0
+  index: -1
+Sparkle_Particle
+  rotate: false
+  xy: 2, 9
+  size: 64, 8
+  orig: 64, 8
+  offset: 0, 0
+  index: -1
+particle_brick
+  rotate: false
+  xy: 2, 2
+  size: 5, 5
+  orig: 5, 5
+  offset: 0, 0
+  index: -1

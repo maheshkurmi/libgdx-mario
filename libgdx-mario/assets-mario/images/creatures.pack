@@ -1,0 +1,489 @@
+
+creatures.png
+size: 1024,64
+format: RGBA8888
+filter: Nearest,Nearest
+repeat: none
+1_Up
+  rotate: false
+  xy: 953, 46
+  size: 16, 16
+  orig: 16, 16
+  offset: 0, 0
+  index: -1
+Blue_Fish
+  rotate: false
+  xy: 448, 46
+  size: 80, 16
+  orig: 80, 16
+  offset: 0, 0
+  index: -1
+BoomRang
+  rotate: false
+  xy: 742, 34
+  size: 48, 12
+  orig: 48, 12
+  offset: 0, 0
+  index: -1
+BoomRang_left
+  rotate: false
+  xy: 346, 46
+  size: 100, 16
+  orig: 100, 16
+  offset: 0, 0
+  index: -1
+BoomRang_right
+  rotate: false
+  xy: 84, 3
+  size: 100, 16
+  orig: 100, 16
+  offset: 0, 0
+  index: -1
+Bowser_Left
+  rotate: false
+  xy: 2, 21
+  size: 170, 41
+  orig: 170, 41
+  offset: 0, 0
+  index: -1
+Bowser_Right
+  rotate: false
+  xy: 174, 21
+  size: 170, 41
+  orig: 170, 41
+  offset: 0, 0
+  index: -1
+Coin_1
+  rotate: false
+  xy: 971, 46
+  size: 16, 16
+  orig: 16, 16
+  offset: 0, 0
+  index: -1
+Coin_2
+  rotate: false
+  xy: 989, 46
+  size: 16, 16
+  orig: 16, 16
+  offset: 0, 0
+  index: -1
+Coin_3
+  rotate: false
+  xy: 268, 3
+  size: 16, 16
+  orig: 16, 16
+  offset: 0, 0
+  index: -1
+Coin_4
+  rotate: false
+  xy: 286, 3
+  size: 16, 16
+  orig: 16, 16
+  offset: 0, 0
+  index: -1
+Coin_5
+  rotate: false
+  xy: 304, 3
+  size: 16, 16
+  orig: 16, 16
+  offset: 0, 0
+  index: -1
+Coin_6
+  rotate: false
+  xy: 322, 3
+  size: 16, 16
+  orig: 16, 16
+  offset: 0, 0
+  index: -1
+Coin_7
+  rotate: false
+  xy: 642, 4
+  size: 16, 16
+  orig: 16, 16
+  offset: 0, 0
+  index: -1
+Coin_8
+  rotate: false
+  xy: 660, 4
+  size: 16, 16
+  orig: 16, 16
+  offset: 0, 0
+  index: -1
+Coin_Icon
+  rotate: false
+  xy: 822, 16
+  size: 8, 10
+  orig: 8, 10
+  offset: 0, 0
+  index: -1
+Fire_Disc
+  rotate: false
+  xy: 692, 46
+  size: 48, 16
+  orig: 48, 16
+  offset: 0, 0
+  index: -1
+Fire_Flower
+  rotate: false
+  xy: 678, 4
+  size: 16, 16
+  orig: 16, 16
+  offset: 0, 0
+  index: -1
+Fireball_1
+  rotate: false
+  xy: 909, 25
+  size: 8, 8
+  orig: 8, 8
+  offset: 0, 0
+  index: -1
+Fireball_2
+  rotate: false
+  xy: 933, 26
+  size: 8, 8
+  orig: 8, 8
+  offset: 0, 0
+  index: -1
+Fireball_3
+  rotate: false
+  xy: 943, 26
+  size: 8, 8
+  orig: 8, 8
+  offset: 0, 0
+  index: -1
+Fireball_4
+  rotate: false
+  xy: 953, 25
+  size: 8, 8
+  orig: 8, 8
+  offset: 0, 0
+  index: -1
+Fireball_5
+  rotate: false
+  xy: 792, 31
+  size: 16, 13
+  orig: 16, 13
+  offset: 0, 0
+  index: -1
+Fireball_6
+  rotate: false
+  xy: 1007, 41
+  size: 12, 12
+  orig: 12, 12
+  offset: 0, 0
+  index: -1
+Fly_Goomba
+  rotate: false
+  xy: 346, 2
+  size: 60, 24
+  orig: 60, 24
+  offset: 0, 0
+  index: -1
+Fly_Koopa_Red_Left
+  rotate: false
+  xy: 592, 2
+  size: 48, 27
+  orig: 48, 27
+  offset: 0, 0
+  index: -1
+Fly_Koopa_Red_Right
+  rotate: false
+  xy: 598, 35
+  size: 48, 27
+  orig: 48, 27
+  offset: 0, 0
+  index: -1
+Goomba_Dead
+  rotate: false
+  xy: 953, 35
+  size: 16, 9
+  orig: 16, 9
+  offset: 0, 0
+  index: -1
+Goomba_Flip
+  rotate: false
+  xy: 696, 10
+  size: 16, 16
+  orig: 16, 16
+  offset: 0, 0
+  index: -1
+Goomba_Normal_1
+  rotate: false
+  xy: 714, 10
+  size: 16, 16
+  orig: 16, 16
+  offset: 0, 0
+  index: -1
+Goomba_Normal_2
+  rotate: false
+  xy: 810, 28
+  size: 16, 16
+  orig: 16, 16
+  offset: 0, 0
+  index: -1
+Green_Koopa
+  rotate: false
+  xy: 526, 2
+  size: 64, 27
+  orig: 64, 27
+  offset: 0, 0
+  index: -1
+Green_Shell
+  rotate: false
+  xy: 346, 28
+  size: 96, 16
+  orig: 96, 16
+  offset: 0, 0
+  index: -1
+Koopa_Red_Left_1
+  rotate: false
+  xy: 881, 35
+  size: 16, 27
+  orig: 16, 27
+  offset: 0, 0
+  index: -1
+Koopa_Red_Left_2
+  rotate: false
+  xy: 917, 36
+  size: 16, 26
+  orig: 16, 26
+  offset: 0, 0
+  index: -1
+Koopa_Red_Right_1
+  rotate: false
+  xy: 899, 35
+  size: 16, 27
+  orig: 16, 27
+  offset: 0, 0
+  index: -1
+Koopa_Red_Right_2
+  rotate: false
+  xy: 935, 36
+  size: 16, 26
+  orig: 16, 26
+  offset: 0, 0
+  index: -1
+Latiku
+  rotate: false
+  xy: 530, 31
+  size: 66, 31
+  orig: 66, 31
+  offset: 0, 0
+  index: -1
+Latiku_Fire
+  rotate: false
+  xy: 648, 22
+  size: 42, 40
+  orig: 42, 40
+  offset: 0, 0
+  index: -1
+Mushroom
+  rotate: false
+  xy: 971, 28
+  size: 16, 16
+  orig: 16, 16
+  offset: 0, 0
+  index: -1
+Piranha_1
+  rotate: false
+  xy: 828, 30
+  size: 25, 32
+  orig: 25, 32
+  offset: 0, 0
+  index: -1
+Piranha_2
+  rotate: false
+  xy: 855, 30
+  size: 24, 32
+  orig: 24, 32
+  offset: 0, 0
+  index: -1
+Red_Fish
+  rotate: false
+  xy: 444, 28
+  size: 80, 16
+  orig: 80, 16
+  offset: 0, 0
+  index: -1
+Red_Platform
+  rotate: false
+  xy: 742, 48
+  size: 50, 14
+  orig: 50, 14
+  offset: 0, 0
+  index: -1
+Red_Platform_2
+  rotate: false
+  xy: 434, 10
+  size: 50, 16
+  orig: 50, 16
+  offset: 0, 0
+  index: -1
+Red_Shell_1
+  rotate: false
+  xy: 989, 28
+  size: 16, 16
+  orig: 16, 16
+  offset: 0, 0
+  index: -1
+Red_Shell_2
+  rotate: false
+  xy: 732, 10
+  size: 16, 16
+  orig: 16, 16
+  offset: 0, 0
+  index: -1
+Red_Shell_3
+  rotate: false
+  xy: 750, 16
+  size: 16, 16
+  orig: 16, 16
+  offset: 0, 0
+  index: -1
+Red_Shell_4
+  rotate: false
+  xy: 768, 16
+  size: 16, 16
+  orig: 16, 16
+  offset: 0, 0
+  index: -1
+Red_Shell_Flip
+  rotate: false
+  xy: 786, 13
+  size: 16, 16
+  orig: 16, 16
+  offset: 0, 0
+  index: -1
+Red_Shell_Still
+  rotate: false
+  xy: 504, 10
+  size: 18, 16
+  orig: 18, 16
+  offset: 0, 0
+  index: -1
+Score_100
+  rotate: false
+  xy: 1007, 30
+  size: 13, 9
+  orig: 13, 9
+  offset: 0, 0
+  index: -1
+Score_1000
+  rotate: false
+  xy: 1007, 55
+  size: 15, 7
+  orig: 15, 7
+  offset: 0, 0
+  index: -1
+Score_100_New
+  rotate: false
+  xy: 881, 25
+  size: 12, 8
+  orig: 12, 8
+  offset: 0, 0
+  index: -1
+Score_100_New2
+  rotate: false
+  xy: 895, 25
+  size: 12, 8
+  orig: 12, 8
+  offset: 0, 0
+  index: -1
+Score_100_New3
+  rotate: false
+  xy: 832, 20
+  size: 12, 8
+  orig: 12, 8
+  offset: 0, 0
+  index: -1
+Score_100_New4
+  rotate: false
+  xy: 846, 20
+  size: 12, 8
+  orig: 12, 8
+  offset: 0, 0
+  index: -1
+Score_100_New5
+  rotate: false
+  xy: 860, 20
+  size: 12, 8
+  orig: 12, 8
+  offset: 0, 0
+  index: -1
+Score_100_New6
+  rotate: false
+  xy: 919, 26
+  size: 12, 8
+  orig: 12, 8
+  offset: 0, 0
+  index: -1
+Score_1_Up
+  rotate: false
+  xy: 750, 6
+  size: 16, 8
+  orig: 16, 8
+  offset: 0, 0
+  index: -1
+Score_200
+  rotate: false
+  xy: 786, 3
+  size: 13, 8
+  orig: 13, 8
+  offset: 0, 0
+  index: -1
+Spring_1
+  rotate: false
+  xy: 486, 2
+  size: 16, 24
+  orig: 16, 24
+  offset: 0, 0
+  index: -1
+Spring_2
+  rotate: false
+  xy: 804, 10
+  size: 16, 16
+  orig: 16, 16
+  offset: 0, 0
+  index: -1
+Spring_3
+  rotate: false
+  xy: 768, 6
+  size: 16, 8
+  orig: 16, 8
+  offset: 0, 0
+  index: -1
+Thorny_Bomb
+  rotate: false
+  xy: 794, 46
+  size: 32, 16
+  orig: 32, 16
+  offset: 0, 0
+  index: -1
+Virus
+  rotate: false
+  xy: 692, 28
+  size: 48, 16
+  orig: 48, 16
+  offset: 0, 0
+  index: -1
+brett
+  rotate: false
+  xy: 186, 9
+  size: 80, 10
+  orig: 80, 10
+  offset: 0, 0
+  index: -1
+level
+  rotate: false
+  xy: 408, 2
+  size: 24, 24
+  orig: 24, 24
+  offset: 0, 0
+  index: -1
+thorny
+  rotate: false
+  xy: 2, 2
+  size: 80, 17
+  orig: 80, 17
+  offset: 0, 0
+  index: -1
