@@ -45,9 +45,8 @@ public class FireFlower extends Creature {
 	@Override
 	public void draw(SpriteBatch g, int x, int y) {
 		TextureRegion r=new TextureRegion(currentAnimation().getImage());//,0,0,getWidth(),getHeight()-(int)y1);
-		//g.drawBitmap(currentAnimation().getImage(),new Rect(0,0,getWidth(),getHeight()-(int)y1),new Rect(x+getOffsetX() , y+getOffsetY(),x +getWidth()+getOffsetX(),y+getOffsetY() +  getHeight()-(int)y1),null);
-
-		g.draw(r,x+getOffsetX() , y+getOffsetY(),getWidth(), getHeight()-(int)y1);
+		r.flip(false, true);
+		g.draw(r.getTexture(),x+getOffsetX() , y+getOffsetY(),getWidth(), getHeight()-(int)y1,r.getU(),r.getV(),r.getU2(),r.getV2()-(r.getV2()-r.getV())*((int)y1)/getHeight());
 	}
 	
 	public void updateCreature(TileMap map, int time) {

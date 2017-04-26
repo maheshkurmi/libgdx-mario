@@ -9,6 +9,7 @@ import com.badlogic.gdx.graphics.g2d.SpriteBatch;
 import com.badlogic.gdx.graphics.glutils.FrameBuffer;
 import com.badlogic.gdx.scenes.scene2d.ui.Skin;
 import com.mygdx.game.mario.MarioResourceManager;
+import com.mygdx.game.mario.MarioSoundManager;
 import com.mygdx.game.mario.game.screens.transition.ScreenTransition;
 
 
@@ -23,7 +24,7 @@ public abstract class AbstractGame implements ApplicationListener {
 	private float t;
 	private ScreenTransition screenTransition;
 	public int WIDTH;
-	protected int HEIGHT=240;
+	public int HEIGHT=240;
 	
 	public AbstractGame(){
 	        skin = new Skin();
@@ -56,6 +57,8 @@ public abstract class AbstractGame implements ApplicationListener {
 		//nextScreen.pause();
 		Gdx.input.setInputProcessor(null); // disable input
 		this.screenTransition = screenTransition;
+		if(screenTransition!=null)MarioSoundManager.instance.playswitchScreen();
+
 		t = 0;
 	}
 

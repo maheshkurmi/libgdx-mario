@@ -148,13 +148,9 @@ public class GameScreen extends AbstractGameScreen implements InputProcessor {
 
 		Settings.setLives(3);
 		mario.resetHealth();
-		if(Settings.level==3){
-			Settings.world++;
-			if(Settings.world>3){
-				Settings.world=3;
-			}else{
-				Settings.level=1;
-			}
+		if(Settings.level==3 ||Settings.world==4){
+			if(Settings.world<=3)Settings.world++;
+			Settings.level=1;
 		}else{
 			Settings.level++;
 		}
