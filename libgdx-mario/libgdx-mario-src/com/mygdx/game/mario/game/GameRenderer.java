@@ -142,8 +142,8 @@ public class GameRenderer {
 		GameRenderer.xOffset=offsetX;
 		GameRenderer.yOffset=offsetY;
 
-		int firstTileX = TileMap.pixelsToTiles(-offsetX-TileMap.TILE_SIZE);
-		int lastTileX = firstTileX + TileMap.pixelsToTiles(screenWidth) + 2;
+		int firstTileX = TileMap.pixelsToTiles(-offsetX-TileMap.TILE_SIZE); //draw extra tile to left
+		int lastTileX = firstTileX + TileMap.pixelsToTiles(screenWidth) + 2; //draw extra tile to right
 		int firstTileY = TileMap.pixelsToTiles(-offsetY);
 		int lastTileY = firstTileY + TileMap.pixelsToTiles(screenHeight) + 1;
 
@@ -211,26 +211,39 @@ public class GameRenderer {
         }	
         
       
-     		waveOffset++;
-    		if (waveOffset*65/11>=MarioResourceManager.instance.gameTiles.waterWave.getRegionWidth())waveOffset=0;
+     		waveOffset+=22;//for water wave animation
+    		if (waveOffset>=1600)waveOffset=0;
 
     	
     		for(int i=0; i<mainMap.waterZones().size();i++){
     			Rectangle VisibleRect=new  Rectangle(firstTileX,firstTileY,lastTileX-firstTileX+1,lastTileY-firstTileY+1);
     			if (intersect(VisibleRect,mainMap.waterZones().get(i),VisibleRect)){
-    				float h=MarioResourceManager.instance.gameTiles.waterWave.getRegionHeight();
-    				Color col=	new Color( 110/255f, 150/255f,204/255f,110/255f);
+    				
+    				float h=MarioResourceManager.instance.gameTiles.waterWaves[0].getRegionHeight();
+    				float w=MarioResourceManager.instance.gameTiles.waterWaves[0].getRegionWidth();
+    				Color col=	new Color( 72/255f, 120/255f,212/255f,62/255f);
 
-    				drawRect(VisibleRect.x*16+offsetX,VisibleRect.y*16+offsetY+h/2-8,VisibleRect.width*16+8,VisibleRect.height*16+8,col,null,g);
-     			   //Draw water waves
-    				/*
-					float w=Math.min(MarioResourceManager.instance.gameTiles.waterWave.getRegionWidth()-65*(waveOffset/11),VisibleRect.getWidth()*16);
-     				g.draw(MarioResourceManager.instance.gameTiles.waterWave,VisibleRect.x*16+offsetX,VisibleRect.y*16+offsetY-h/2,65*(waveOffset/11),0,w,h,1,1,0);
-    				if(w<VisibleRect.getWidth()*16){
-    					g.draw(MarioResourceManager.instance.gameTiles.waterWave,VisibleRect.x*16+offsetX+w,VisibleRect.y*16+offsetY-h/2,0,0,VisibleRect.getWidth()*16,h,1,1,0);
-        		    }
-        		    */
-    	    	}
+    				drawRect(VisibleRect.x*16+offsetX,VisibleRect.y*16+16+offsetY,VisibleRect.width*16,VisibleRect.height*16-16,col,null,g);
+    				drawRect(VisibleRect.x*16+offsetX,VisibleRect.y*16+16+offsetY,VisibleRect.width*16,VisibleRect.height*16-16,col,null,g);
+         			
+    				int n=waveOffset/200;
+    				float x=VisibleRect.x*16+offsetX;
+    				float y=VisibleRect.y*16+16+offsetY-h;
+    				TextureRegion r=MarioResourceManager.instance.gameTiles.waterWaves[n];
+    				//draw water waves
+    				float dv=r.getV2()-r.getV();
+					float du=r.getU2()-r.getU();
+    				while(x<=VisibleRect.x*16+offsetX+VisibleRect.getWidth()*16-w){
+    					g.draw(r.getTexture(),x , y+h*0.4f,w, 0.6f*h,r.getU(),r.getV2(),r.getU2(),r.getV()+dv*0.4f);
+    					g.draw(r.getTexture(),x , y+h*0.4f,w, 0.6f*h,r.getU(),r.getV2(),r.getU2(),r.getV()+dv*0.4f);
+    					x+=w;
+    				}
+					
+					if((int)VisibleRect.width % 2 !=0){
+						g.draw(r.getTexture(),x , y+h/3,w/2, 2*h/3,r.getU(),r.getV2(),(r.getU2()+r.getU())/2,r.getV()+dv/3);
+						g.draw(r.getTexture(),x , y+h/3,w/2, 2*h/3,r.getU(),r.getV2(),(r.getU2()+r.getU())/2,r.getV()+dv/3);
+					}
+     	    	}
     		}
   
         //Draw Prev Next Buttons

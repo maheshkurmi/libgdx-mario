@@ -111,7 +111,7 @@ public class EditGameScreen extends AbstractGameScreen implements InputProcessor
 	    tools.add(new Button(new Image(MarioResourceManager.instance.icons.NEW), skin, "toggle"));
 	    tools.add(new Button(new Image(MarioResourceManager.instance.icons.NEW), skin, "toggle"));
 		
-	    buttonGroup.add(tools.toArray(Button.class));
+	  //  buttonGroup.add(tools.toArray(Button.class));
 	    
 	
 	    uiTable.pad(0);

@@ -75,7 +75,7 @@ public class MarioGame extends AbstractGame
         uiTextButtonStyle.over = skin.getDrawable("buttonOver");
         uiTextButtonStyle.overFontColor = Color.GREEN;
         
-        Texture downTex = new Texture(Gdx.files.internal("assets-mario/skin//ninepatch-3.png"));
+        Texture downTex = new Texture(Gdx.files.internal("assets-mario/skin/ninepatch-3.png"));
         skin.add("buttonDown", new NinePatch(downTex, 26,26,16,20) );        
         uiTextButtonStyle.down = skin.getDrawable("buttonDown");
         uiTextButtonStyle.downFontColor = Color.GREEN;		

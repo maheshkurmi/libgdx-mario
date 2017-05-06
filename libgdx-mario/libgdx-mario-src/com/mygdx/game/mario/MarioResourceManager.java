@@ -13,6 +13,7 @@ import com.badlogic.gdx.graphics.g2d.BitmapFont;
 import com.badlogic.gdx.graphics.g2d.TextureAtlas;
 import com.badlogic.gdx.graphics.g2d.TextureAtlas.AtlasRegion;
 import com.badlogic.gdx.graphics.g2d.TextureRegion;
+import com.badlogic.gdx.scenes.scene2d.utils.TiledDrawable;
 import com.badlogic.gdx.utils.Array;
 import com.badlogic.gdx.utils.Disposable;
 
@@ -322,7 +323,7 @@ public class MarioResourceManager  implements Disposable, AssetErrorListener
 		public final TextureRegion mushroomTree;
 		public final TextureRegion woodenBridge;
 		public final TextureRegion waterRock;
-		public final TextureRegion waterWave;
+		public final TextureRegion[] waterWaves;
 		//grass
 		public final TextureRegion Sloped_Tile;
 		public final TextureRegion Grass_Edge; 
@@ -362,7 +363,7 @@ public class MarioResourceManager  implements Disposable, AssetErrorListener
 			Sloped_Tile = atlas.findRegion("Sloped_Tile");
 			Grass_Edge = atlas.findRegion("Grass_Edge");
 			Grass_Center = atlas.findRegion("Grass_Center");
-			waterWave=atlas.findRegion("Water_Wave2");
+			waterWaves=splitSprites(atlas.findRegion("water-waves"),1,8);
 			Castle=atlas.findRegion("Castle");
 
 		}
@@ -767,13 +768,13 @@ public class MarioResourceManager  implements Disposable, AssetErrorListener
 		TextureAtlas atlasParticles = assetManager.get(Constants.TEXTURE_ATLAS_PARTICLES);
 		TextureAtlas atlasIcons= assetManager.get(Constants.TEXTURE_ATLAS_ICONS);
 		// enable texture filtering for pixel smoothing
-		/*
+		
 		for (Texture t : atlasMario.getTextures()) t.setFilter(TextureFilter.Linear, TextureFilter.Linear);
-		for (Texture t : atlasCreatures.getTextures()) t.setFilter(TextureFilter.Linear, TextureFilter.Linear);
-		for (Texture t : atlasGameTiles.getTextures()) t.setFilter(TextureFilter.Linear, TextureFilter.Linear);
+		//for (Texture t : atlasCreatures.getTextures()) t.setFilter(TextureFilter.Linear, TextureFilter.Linear);
+		//for (Texture t : atlasGameTiles.getTextures()) t.setFilter(TextureFilter.Linear, TextureFilter.Linear);
 		for (Texture t : atlasGui.getTextures()) t.setFilter(TextureFilter.Linear, TextureFilter.Linear);
-		for (Texture t : atlasParticles.getTextures()) t.setFilter(TextureFilter.Linear, TextureFilter.Linear);
-		*/
+		//for (Texture t : atlasParticles.getTextures()) t.setFilter(TextureFilter.Linear, TextureFilter.Linear);
+		
 		Array<AtlasRegion> tr;
 		// Let's flip all the regions.  Required for y=0 is TOP
 		 tr= atlasMario.getRegions();      
@@ -852,7 +853,7 @@ public class MarioResourceManager  implements Disposable, AssetErrorListener
 		defaultSmall.dispose();
 		defaultNormal.dispose();
 		defaultBig.dispose();
-		if(gameBackground!=null)gameBackground.getTexture().dispose();
+		//if(gameBackground!=null)gameBackground.getTexture().dispose();
 		assetManager.dispose();
 		defaultSmall=null;
 		defaultNormal=null;
@@ -868,13 +869,18 @@ public class MarioResourceManager  implements Disposable, AssetErrorListener
 		Gdx.app.error(TAG, "Couldn't load asset '" + asset.fileName + "'", (Exception)throwable);		
 	}
 	
+	private static String background_Path="";
 	//loads random background
 	public static void loadBackground(int index){
-		if(gameBackground!=null)gameBackground.getTexture().dispose();
-		Texture t=new Texture(Gdx.files.internal("assets-mario/backgrounds/background"+index+".png"));
-		t.setWrap( TextureWrap.MirroredRepeat,TextureWrap.MirroredRepeat);
-		gameBackground=new TextureRegion(t);
-		
+		if(!background_Path.isEmpty())instance.assetManager.unload(background_Path);
+		//Texture t=new Texture(Gdx.files.internal("assets-mario/backgrounds/background"+index+".png"));
+		//t.setWrap( TextureWrap.MirroredRepeat,TextureWrap.MirroredRepeat);
+		//gameBackground=new TextureRegion(t);
+		instance.assetManager.load("assets-mario/backgrounds/background"+index+".png", Texture.class);
+		instance.assetManager.finishLoading();
+		gameBackground=new TextureRegion((Texture)instance.assetManager.get("assets-mario/backgrounds/background"+index+".png"));
+		gameBackground.flip(false,true);
+		//gameBackground.getTexture().setWrap( TextureWrap.MirroredRepeat,TextureWrap.MirroredRepeat);
 	}
  
 }

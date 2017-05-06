@@ -38,7 +38,7 @@ public class Piranha extends Creature {
 		dx=0;
 		initY=pixelY;
 		setOffsetX(-3);
-
+		y1=getHeight();
 	}
 	
 	@Override
@@ -46,7 +46,6 @@ public class Piranha extends Creature {
 		TextureRegion r=new TextureRegion(currentAnimation().getImage());//,0,0,getWidth(),getHeight()-(int)y1);
 		r.flip(false, true);
 		g.draw(r.getTexture(),x+getOffsetX() , y+getOffsetY(),getWidth(), getHeight()-(int)y1,r.getU(),r.getV(),r.getU2(),r.getV2()-(r.getV2()-r.getV())*((int)y1)/getHeight());
-		//		g.draw(r,x+getOffsetX() , y+getOffsetY(),getWidth(), getHeight()-(int)y1);
 	}
 	
 	

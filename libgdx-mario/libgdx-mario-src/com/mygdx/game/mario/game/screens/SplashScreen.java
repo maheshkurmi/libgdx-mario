@@ -57,7 +57,7 @@ public class SplashScreen extends AbstractGameScreen {
         	batch.setProjectionMatrix(camera.combined);
         	batch.enableBlending();
         	batch.begin();
-        	GameRenderer.drawNormalString(batch, "LOADING GAME  ....",Color.ORANGE,game.WIDTH/2, game.HEIGHT/2-20,0 );
+        	GameRenderer.drawNormalString(batch, "LOADING GAME [ "+Math.round(MarioResourceManager.instance.assetManager.getProgress()*100)+"% ]",Color.ORANGE,game.WIDTH/2, game.HEIGHT/2-20,0 );
         	batch.end();
 
          	Gdx.gl20.glLineWidth(1f);

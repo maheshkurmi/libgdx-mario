@@ -10,6 +10,7 @@ import java.util.List;
 import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.Input.Keys;
 import com.badlogic.gdx.Input.Peripheral;
+import com.badlogic.gdx.graphics.Color;
 import com.badlogic.gdx.graphics.g2d.SpriteBatch;
 import com.badlogic.gdx.graphics.g2d.TextureRegion;
 import com.badlogic.gdx.math.Vector2;
@@ -1153,6 +1154,15 @@ public class Mario extends CollidableObject{
 		if (dy>0 && currentAnimation()==swimActiveLeft)setAnimation(swimPassiveLeft);
 		if (dy<0 && currentAnimation()==swimPassiveLeft)setAnimation(swimActiveLeft);
 	
+		if(inWater){
+			for (int i=0; i<map.waterZones().size();i++){
+    				if (map.waterZones().get(i).y>(y+getHeight()/2)/16){
+		             map.creaturesToAdd().add(new SmokeParticle((int) (x + Math.random() * 16 - 8) + 4, (int) map.waterZones().get(i).y*16, (float) (Math.random() * 2 - 1)/20, (float) Math.random() * -1/20.0f,10,new Color( 182/255f, 220/255f,252/255f,98/255f)));
+		             if(dy<0)dy=0.6f*jumpHeight;
+		             break;
+				}
+			}
+		}
 	}
 
 	/**

@@ -16,9 +16,17 @@ import com.mygdx.game.mario.objects.Creature;
 public class BubbleParticle extends Creature
 {
 	private float r=1.5f;
-	private Color borderColor= new Color( 150/255f,160/255f,240/255f,170/255f);
-	private Color fillColor=new Color( 200/255f,200/255f,245/255f,60/255f);
+	//private Color borderColor= new Color( 150/255f,160/255f,240/255f,170/255f);
+	private Color borderColor=new Color( 200/255f,200/255f,245/255f,60/255f);
+	private Color fillColor=	new Color( 92/255f, 170/255f,212/255f,60/255f);
+
 	
+	 public BubbleParticle(int x, int y,Color borderColor, Color fillColor){
+		 this(x,y);
+		 this.borderColor=borderColor;
+		 this.fillColor=fillColor;
+	 }
+	  
     /**
      * 
      * @param x Origin-X of particles
@@ -42,9 +50,9 @@ public class BubbleParticle extends Creature
     }
 
     public void update(int time){
-    	if (y<0) kill();
+    	if (y<30) kill();
     	 dx=-1f+(float) (2*Math.random());
-       	 r+=time/1800.0f;
+       	 r+=time/2000.0f;
      	 if(dy > -3f) { // apply gravity...this must be done first
 			dy = dy + getGravityFactor()*GRAVITY * time;
 		}

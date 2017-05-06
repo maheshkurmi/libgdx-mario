@@ -24,7 +24,7 @@ public class MarioSoundManager{
 	
 	public void play (Sound sound) {
 		if (!Settings.soundEnabled ||sound==null) return;
-		if(playingSound!=null)playingSound.stop();
+		//if(playingSound!=null)playingSound.stop();
 		sound.play(Settings.volSound );
 		playingSound=sound;
 

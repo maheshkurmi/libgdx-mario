@@ -200,8 +200,8 @@ public class GameScreen extends AbstractGameScreen implements InputProcessor {
 		}   
 
     	Settings.setLives(mario.getHealth());
-    	switchTime=10;
-		switchTimeInitial=12;
+    	switchTime=6;
+		switchTimeInitial=8;
 
     }
 
@@ -250,7 +250,7 @@ public class GameScreen extends AbstractGameScreen implements InputProcessor {
 				mario.resetHealth();
 			}
 			
-			timeRemaining=((Settings.world==4)?25:0.5f)*map.getWidth();
+			timeRemaining=((Settings.world==4)?50:0.5f)*map.getWidth();
 			eventID = 0;
 			map.setPlayer(mario); // set the games main player to mario
 			Settings.setPlayer(mario);
@@ -608,11 +608,9 @@ public class GameScreen extends AbstractGameScreen implements InputProcessor {
 			if(keycode==Keys.R)reLoadGame((int) (mario.getdX()/16));
 			if(keycode==Keys.N)loadNextGame();
 			if(keycode==Keys.P)loadPrevGame();
-		} if(state==GameState.Paused && keycode==Keys.SPACE){
-			resume();
 		}else if(state==GameState.GameOver && keycode==Keys.SPACE){
 			GameOver();
-		}else if(state==GameState.Ready && keycode==Keys.SPACE){
+		}else if((state==GameState.Ready|| state==GameState.Paused)&& keycode==Keys.SPACE){
 			state = GameState.Running;
 			isSystemDriven=false;
 			updateRunning(0);

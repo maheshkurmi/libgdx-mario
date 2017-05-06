@@ -1,5 +1,6 @@
 package com.mygdx.game.mario.objects.particles;
 
+import com.badlogic.gdx.graphics.Color;
 import com.badlogic.gdx.graphics.g2d.SpriteBatch;
 import com.badlogic.gdx.graphics.g2d.TextureRegion;
 import com.mygdx.game.mario.MarioResourceManager;
@@ -16,7 +17,13 @@ public class SmokeParticle extends Creature
     private int xPic;
     private int xPicStart;
     private int delayTime;
-    public SmokeParticle(int x, int y, float dx, float dy,int delay)
+    private Color color;
+    
+    public SmokeParticle(int x, int y, float dx, float dy,int delay){
+    	this(x,y,dx,dy,delay,null);
+    }
+    
+    public SmokeParticle(int x, int y, float dx, float dy,int delay,Color color)
     {
     	super(x, y);
         this.x = x;
@@ -31,6 +38,8 @@ public class SmokeParticle extends Creature
 		this.gravityEffect=0.02f;
         int timespan=5;
         life = 10+(int)(Math.random()*timespan);
+        this.color=	color;
+
     }
 
     public void update(int time){
@@ -55,7 +64,10 @@ public class SmokeParticle extends Creature
     public void draw(SpriteBatch g, int x, int y) {
     	delayTime--;
     	if (delayTime>0) return;
+    	Color c=g.getColor();
+    	if(color!=null)g.setColor(color);
     	g.draw(MarioResourceManager.instance.particles.Smoke_Particles[xPic], x, y);
+    	g.setColor(c);
 	}
     
  	public TextureRegion getImage() {

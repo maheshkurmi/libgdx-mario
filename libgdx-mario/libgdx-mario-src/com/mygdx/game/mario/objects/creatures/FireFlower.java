@@ -11,7 +11,7 @@ import com.mygdx.game.mario.objects.Creature;
 
 
 /**
- * Generally placed over pipe, so that it appears to come out of it, can be killed only by fireball
+ * Power up for fireballs
  * @author maheshkurmi
  *
  */

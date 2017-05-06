@@ -226,7 +226,7 @@ public class GameLoader {
 						infoCount++;
 					}
 				} else if (ch == '[') {
-					FireTile r = new FireTile(pixelX, pixelY);
+					FireTile r = new FireTile(pixelX, pixelY,newMap);
 					newMap.setTile(x, y, r);
 					newMap.animatedTiles().add(r);
 				} else if (ch == ']') {
@@ -357,7 +357,7 @@ public class GameLoader {
 					newMap.setTile(x, y, r);
 					newMap.animatedTiles().add(r);
 				} else if (ch == '[') {
-					FireTile r = new FireTile(pixelX, pixelY);
+					FireTile r = new FireTile(pixelX, pixelY,newMap);
 					newMap.setTile(x, y, r);
 					newMap.animatedTiles().add(r);
 				} else if (ch == ']') {
@@ -607,7 +607,7 @@ public class GameLoader {
 					map.setTile(x, y, r);
 					map.animatedTiles().add(r);
 				} else if (ch == '[') {
-					FireTile r = new FireTile(pixelX, pixelY);
+					FireTile r = new FireTile(pixelX, pixelY,map);
 					map.setTile(x, y, r);
 					map.animatedTiles().add(r);
 				} else if (ch == ']') {

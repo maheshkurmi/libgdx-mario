@@ -58,7 +58,6 @@ public abstract class AbstractGame implements ApplicationListener {
 		Gdx.input.setInputProcessor(null); // disable input
 		this.screenTransition = screenTransition;
 		if(screenTransition!=null)MarioSoundManager.instance.playswitchScreen();
-
 		t = 0;
 	}
 
@@ -98,6 +97,11 @@ public abstract class AbstractGame implements ApplicationListener {
 				// render transition effect to screen
 				float alpha = t / duration;
 				screenTransition.render(batch, currFbo.getColorBufferTexture(), nextFbo.getColorBufferTexture(), alpha);
+				//start updating screen in between transition to avoid feel of game hault
+				if(t>duration*0.75f){
+					if(t<duration*0.75f+deltaTime)Gdx.input.setInputProcessor(nextScreen.getInputProcessor());
+					nextScreen.update(deltaTime);
+				}
 			}
 		}
 	}
